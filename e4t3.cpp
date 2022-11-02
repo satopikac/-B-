@@ -1,4 +1,3 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<string.h>
 #define MAX 100
@@ -15,7 +14,7 @@ int main()
 	for (int i = 0; i < len1 - len2; i++)
 	{
 
-		for (int j = 0; j < len2; j++)
+		for (int j = 0; j < len2; j++)    //由此逐位右移取主串的字串长部分，并与子串比较
 		{
 			cou[j] = ma[i + j];
 		}
